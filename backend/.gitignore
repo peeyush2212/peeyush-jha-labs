@@ -1,0 +1,7 @@
+# Keep backend-specific ignores here too (useful if you deploy from backend/ as repo root)
+
+__pycache__/
+.pytest_cache/
+.venv/
+*.db
+*.log

@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+# Keep linting practical for a small demo project.
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = [
+  "E501", # line length handled by formatter; don't block on it
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
